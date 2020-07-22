@@ -1,0 +1,31 @@
+GET http://localhost:5000/api/users/test
+
+###
+GET http://localhost:5000/api/profile/test
+
+
+###
+POST http://localhost:5000/api/users/register HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Sagar Mainkar",
+    "email":"sagar.mainkar@gmail.com",
+    "password":"123456",
+    "confirmPassword":"123456"
+    
+}
+
+###
+POST http://localhost:5000/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+   
+    "email":"sagar.mainkar@gmail.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:5000/api/users/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMTZjZDlmMzUzZTUxNjhhMDFlNWIzYSIsIm5hbWUiOiJTYWdhciBNYWlua2FyIiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9hODhjYTlhY2VmZmE5ODYwMTJlMDY5MWVhMDg0MDhlYT9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1OTU0MDg3MzUsImV4cCI6MTU5NTQxMjMzNX0.E0FoRDBLhJbERhSj8ZZzms10JNgaHFbUdbXA2cz-6-w
